@@ -11,7 +11,7 @@ namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
     public abstract class Base<T> //Generic
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
         public T Id { get; set; }
 
         public DateTime CreatedDate { get; set; }

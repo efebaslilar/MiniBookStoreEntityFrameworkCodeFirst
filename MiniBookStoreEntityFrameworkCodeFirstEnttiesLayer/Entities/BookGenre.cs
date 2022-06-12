@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
 {
     [Table("BookGenre")]
-    class BookGenre : Base<Byte>
+    public class BookGenre : Base<Byte>
     {
         [Required(ErrorMessage = "Kitap türü boş geçilemez!")]
         [StringLength(50,MinimumLength =2,ErrorMessage ="Kitap Türü 2-50 karakter arasında olmalıdır.")]
         public string GenreName { get; set; }
+
+        public virtual List<Book> Books { get; set; }
     }
 }

@@ -17,11 +17,20 @@ namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
         [StringLength(100,ErrorMessage ="Kitap İsmi maksimum 100 karakter olmadılır.")]
         public string BookName { get; set; }
 
-        public int GenreId { get; set; }
+        public byte GenreId { get; set; }
         
         public int AuthorId { get; set; }
         
         public int PublicationYear { get; set; }
+        public int Page { get; set; }
+
+
+
+        [ForeignKey("AuthorId")]
+        public virtual Author Author { get; set; }
+
+        [ForeignKey("GenreId")]
+        public virtual BookGenre BookGenre { get; set; }
 
     }
 }

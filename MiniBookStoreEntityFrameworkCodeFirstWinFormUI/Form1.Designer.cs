@@ -1,7 +1,7 @@
 ﻿
 namespace MiniBookStoreEntityFrameworkCodeFirstWinFormUI
 {
-    partial class Form1
+    partial class FrmGiris
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,36 @@ namespace MiniBookStoreEntityFrameworkCodeFirstWinFormUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnTurler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // btnTurler
+            // 
+            this.btnTurler.Location = new System.Drawing.Point(12, 12);
+            this.btnTurler.Name = "btnTurler";
+            this.btnTurler.Size = new System.Drawing.Size(227, 115);
+            this.btnTurler.TabIndex = 0;
+            this.btnTurler.Text = "Tür İşlemleri";
+            this.btnTurler.UseVisualStyleBackColor = true;
+            this.btnTurler.Click += new System.EventHandler(this.btnTurler_Click);
+            // 
+            // FrmGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 515);
+            this.Controls.Add(this.btnTurler);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Name = "FrmGiris";
+            this.Text = "Mini Book Store";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnTurler;
     }
 }
 

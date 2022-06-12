@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace MiniBookStoreEntityFrameworkCodeFirstWinFormUI
 {
-    public partial class Form1 : Form
+    public partial class FrmGiris : Form
     {
-        public Form1()
+        public FrmGiris()
         {
             InitializeComponent();
+        }
+
+        private void btnTurler_Click(object sender, EventArgs e)
+        {
+            FrmTurler frm = new FrmTurler();
+            frm.ShowDialog();
         }
     }
 }

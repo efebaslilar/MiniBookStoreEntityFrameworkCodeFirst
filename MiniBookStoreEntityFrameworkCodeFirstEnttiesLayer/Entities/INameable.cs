@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniBookStoreEntityFrameworkCodeFirstBussinesLogicLyr
+namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
 {
-    public class Class1
+    interface INameable
     {
+        string Name { get; set; }
     }
 }
