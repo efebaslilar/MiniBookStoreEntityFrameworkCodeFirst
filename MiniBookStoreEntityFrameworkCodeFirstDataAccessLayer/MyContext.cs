@@ -21,6 +21,8 @@ namespace MiniBookStoreEntityFrameworkCodeFirstDataAccessLayer
         public virtual DbSet<BookGenre> BookGenreTable { get; set; }
         public virtual DbSet<Author> AuthorTable { get; set; }
 
+        public virtual DbSet<BookSale> BookSaleTable { get; set; }
+
 
 
     }

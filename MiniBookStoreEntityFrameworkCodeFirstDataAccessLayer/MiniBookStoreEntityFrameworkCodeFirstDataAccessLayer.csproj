@@ -55,6 +55,18 @@
     <Compile Include="Migrations\202206121127365_InitalizeDB.designer.cs">
       <DependentUpon>202206121127365_InitalizeDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206250842036_BookDataUpdate.cs" />
+    <Compile Include="Migrations\202206250842036_BookDataUpdate.designer.cs">
+      <DependentUpon>202206250842036_BookDataUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206250846253_BookUpdate.cs" />
+    <Compile Include="Migrations\202206250846253_BookUpdate.designer.cs">
+      <DependentUpon>202206250846253_BookUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206250925222_BookSale-Update.cs" />
+    <Compile Include="Migrations\202206250925222_BookSale-Update.designer.cs">
+      <DependentUpon>202206250925222_BookSale-Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,6 +84,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202206121127365_InitalizeDB.resx">
       <DependentUpon>202206121127365_InitalizeDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206250842036_BookDataUpdate.resx">
+      <DependentUpon>202206250842036_BookDataUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206250846253_BookUpdate.resx">
+      <DependentUpon>202206250846253_BookUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206250925222_BookSale-Update.resx">
+      <DependentUpon>202206250925222_BookSale-Update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

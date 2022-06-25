@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorMenager.cs" />
     <Compile Include="BookGenreMenager.cs" />
+    <Compile Include="BookMenager.cs" />
+    <Compile Include="BookSaleMenager.cs" />
+    <Compile Include="Menager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

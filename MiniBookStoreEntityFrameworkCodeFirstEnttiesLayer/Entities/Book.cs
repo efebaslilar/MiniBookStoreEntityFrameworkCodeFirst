@@ -11,6 +11,10 @@ namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
     [Table("Books")]
     public class Book:Base<int>
     {
+
+        [Required(ErrorMessage = "Kitap ismi boş bırakılmaz")]
+        [StringLength(5,MinimumLength =5, ErrorMessage = "ISBN 5 karakter olmadılır.")]
+        [Index(IsUnique =true)]
         public string ISBN { get; set; }
 
         [Required(ErrorMessage ="Kitap ismi boş bırakılmaz")]
@@ -24,6 +28,8 @@ namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
         public int PublicationYear { get; set; }
         public int Page { get; set; }
 
+        public int Stock { get; set; } //yeni eklenen kolon
+
 
 
         [ForeignKey("AuthorId")]
@@ -31,6 +37,11 @@ namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
 
         [ForeignKey("GenreId")]
         public virtual BookGenre BookGenre { get; set; }
+
+        public override string ToString()
+        {
+            return BookName;
+        }
 
     }
 }

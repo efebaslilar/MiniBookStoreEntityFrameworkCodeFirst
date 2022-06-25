@@ -24,5 +24,10 @@ namespace MiniBookStoreEntityFrameworkCodeFirstEnttiesLayer.Entities
 
         //Bir yazarın birden çok kitabı olabilir.
         public virtual List<Book> AuthorBooks { get; set;}
+
+        public override string ToString()
+        {
+            return $"{Name} {Surname}";
+        }
     }
 }

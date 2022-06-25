@@ -15,11 +15,18 @@ namespace MiniBookStoreEntityFrameworkCodeFirstWinFormUI
         public FrmGiris()
         {
             InitializeComponent();
+            
         }
 
         private void btnTurler_Click(object sender, EventArgs e)
         {
             FrmTurler frm = new FrmTurler();
+            frm.ShowDialog();
+        }
+
+        private void btnKitapIslemleri_Click(object sender, EventArgs e)
+        {
+            FrmKitaplar frm = new FrmKitaplar();
             frm.ShowDialog();
         }
     }
